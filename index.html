@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Telefonica</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="imagens/icone-agenda.png.png" alt="Icone de Agenda Contatos">
+            <h1>Agenda de Contatos</h1>
+        </header>
+        <form id="contact-form">
+            <label for="contact-name">Nome:</label>
+            <input id="contact-name" type="text" required placeholder="Ex.: Eduardo Magalhães">
+
+            <label for="contact-tel">Telefone:</label>
+            <input id="contact-tel" type="tel" required placeholder="(xx) 00000 - 0000">
+
+            <label for="contact-email">Email:</label>
+            <input id="contact-email" type="email" required placeholder="Ex.: eduardo@gmail.com">
+
+            <label for="contact-address">Endereço:</label>
+            <input id="contact-address" type="text" required placeholder="Ex.: Rua do HTML, 123">
+
+            <button id="button" type="submit">Adicionar</button>
+        </form>
+        <table id="contact-table">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                    <th>Email</th>
+                    <th>Endereço</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Os contatos serão inseridos aqui -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">Total de <span class="numero-de-contatos">0</span> contatos salvos</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <footer>
+        © 2024 - Todos os direitos reservados - Eduardo Magalhães
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
